@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Billie Eilish - Portada e Índice</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #000814;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    /* ENCABEZADO */
+    .encabezado {
+      background-color: #010c18;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid white;
+    }
+
+    .encabezado h1, .encabezado h2 {
+      margin: 5px;
+      color: #00bfff;
+    }
+
+    .logos {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 10px;
+    }
+
+    .logos img {
+      height: 80px;
+    }
+
+    /* CONTENIDO PRINCIPAL */
+    .contenido {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .columna-izquierda {
+      flex: 4;
+      background-image: url('billie_background.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .columna-derecha {
+      flex: 1;
+      background-color: #010c18;
+      padding: 20px 10px;
+      border-left: 2px solid #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .titulo {
+      font-size: 54px;
+      text-align: center;
+      color: #00aaff;
+      text-shadow: 6px 4px 8px #000;
+      margin-bottom: 40px;
+    }
+
+    .autor {
+      margin-top: 10px;
+      font-size: 20px;
+      color: #cceeff;
+    }
+
+    .imagen img {
+      max-width: 500px;
+      border-radius: 10px;
+      border: 3px solid #fff;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .indice h2 {
+      text-align: center;
+      font-size: 40px;
+      color: #00bfff;
+      margin-bottom: 10px;
+    }
+
+    .indice ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .indice li {
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .indice a {
+      color: #87cefa;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .indice a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 8px;
+      font-size: 14px;
+      animation: mover 12s linear infinite;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    @keyframes mover {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado institucional -->
+  <div class="encabezado">
+    <h1>INSTITUTO POLITÉCNICO NACIONAL</h1>
+    <h2>CECyT 4 “LAZARO CARDENAZ”</h2>
+    <div class="logos">
+      <img src="escudo1.png" alt="Escudo IPN">
+      <img src="escudo2.png" alt="Escudo CECyT 4">
+    </div>
+  </div>
+
+  <!-- Contenido dividido -->
+  <div class="contenido">
+    <!-- Portada más grande -->
+    <div class="columna-izquierda">
+      <div class="titulo">Billie Eilish: Más allá de la música</div>
+      <div class="imagen">
+        <img src="billie_main.jpg" alt="Billie Eilish">
+      </div>
+      <div class="autor">Elaborado por: Lopez Sixtos Paola</div>
+    </div>
+
+    <!-- Índice pequeño -->
+    <div class="columna-derecha">
+      <div class="indice">
+        <h2>Menú</h2>
+        <ul>
+          <li><a href="quien es billie.html">¿Quién es Billie Eilish?</a></li>
+          <li><a href="trayectoria.html">Trayectoria</a></li>
+          <li><a href="discografia.html">Discografía</a></li>
+          <li><a href="premios.html">Premios</a></li>
+          <li><a href="estilo.html">Estilo</a></li>
+          <li><a href="vida.html">Vida personal</a></li>
+          <li><a href="impacto.html">Impacto cultural</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Texto en movimiento -->
+  <div class="footer">
+    © Derechos de autor reservados 2025. Proyecto Escolar.
+  </div>
+
+</body>
+</html>
